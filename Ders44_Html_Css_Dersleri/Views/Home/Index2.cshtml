@@ -1,0 +1,85 @@
+﻿@using Ders44_Html_Css_Dersleri.Models;
+@model List<Products>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+    <link href="~/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+
+        <p>aaaaaaaaaaaa  bbbbbbbbbbb  cccccccccccccc  <mark>dddddddd</mark> eeee</p>
+
+        <button id="btn_kaydet">KAYDET</button>
+
+        <table border="1" class="shop_table_sedat cart_sedat">
+            <tr>
+                <th>ProductID</th>
+                <th>ProductName</th>
+                <th>Price</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductID</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.UnitPrice</td>
+                </tr>
+            }
+
+        </table>
+
+
+
+        <br /><br />
+
+
+
+        <table border="1">
+            <tr>
+                <th>ProductID</th>
+                <th>ProductName</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>televizyon</td>
+                <td>25000</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>cep telefonu</td>
+                <td>12000</td>
+            </tr>
+        </table>
+
+        <dl>
+            <dt>Ege Bölgesi</dt>
+            <dd>Denizli</dd>
+            <dd>İzmir</dd>
+            <dd>Muğla</dd>
+            <dd>Aydın</dd>
+            <br />
+            <dt>Çay Türleri</dt>
+            <dd>Rize çayı</dd>
+            <dd>İran Tea</dd>
+            <dd>English Tea</dd>
+        </dl>
+
+    </div>
+</body>
+</html>
+<script>
+
+</script>

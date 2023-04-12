@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index4</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div> 
+
+        <form action="/Home/Index4" method="post">
+            <fieldset>
+                <legend>ÜYE BİLGİLERİ</legend>
+                <label>Adınız</label> <input type="text" name="ProductName" value="" required maxlength="15" placeholder="isminizi buraya giriniz" />
+                <br />
+                <label>Email</label> <input type="email" name="txt_email" value="" required />
+                <br />
+                <label>Şifre</label> <input type="password" name="txt_password" value="" />
+                <br />
+                <label>Adres</label> <textarea rows="4" cols="40">
+         </textarea>
+                <br />
+
+
+                <select>
+                    <option>İZMİR</option>
+                    <option>DENİZLİ</option>
+                    <option>AYDIN</option>
+                    <option>MUĞLA</option>
+                </select>
+
+                <br />
+
+                <input type="submit" name="name" value="KAYDET" class="btn btn-danger" />
+
+            </fieldset>
+
+           
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿@using Ders44_Html_Css_Dersleri.Models;
+@model List<Categories>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+
+        <p><abbr title="Türkiye Büyük Millet Meclisi">TBMM</abbr> 23 Nisan 1920 <br />Yılında kuruldu.</p>
+
+        <p><cite>"Bu metin alıntı şeklinde yazılmıştır."</cite></p>
+
+        <p>
+            Lorem Ipsum, <strong> didsfdzgi ve baskı</strong> endüstrisinde <b>kullanılan</b> mıgır <em>Yatık - İtalic</em> metinlerdir. <i>Lorem</i>  <a href="http://www.arabam.com">link</a>  bir <sub>below</sub> <sup>above</sup> matbaacının  <s>üstü çizili</s> bir <u>underline</u>  numune <del>kitabı oluşturmak</del>  üzere bir <small>küçük</small> yazı <big>galerisini</big> alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinle
+        </p>
+
+        <p><center> Lorem Ipsum rastgele sözcüklerden oluşmaz</center></p>
+
+        <p id="myid">
+            Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatına kadar uzanan 2000 yıllık bir geçmişi vardır
+        </p>
+
+
+        <div class="owl-buttons">
+            aaaaaaa <br />
+            bbbbbbbbbb  <br />
+            ccccccccccc
+        </div>
+
+        <div class="owl-buttons  sp-module-title ">
+            ddfffff <br />
+            dfgdfgfdgfd <br />
+        </div>
+
+        <ul class="shop_table_sedat cart_sedat2">
+            <li>111111</li>
+            <li>222222</li>
+            <li>333333</li>
+            <li>444444</li>
+        </ul>
+
+
+        rgb = kırmızı,yeşil,mavi
+        <ol style="background-color:#3a635e;color:yellow;font-size:20px;">
+            @foreach (var item in Model)
+            {
+                <li>@item.CategoryName</li>
+
+            }
+        </ol>
+
+
+        <a href="https://www.arabam.com/">
+            <img src="~/iran_halisi.jpg" height="150" width="150" />
+        </a>
+
+        <a href="http://www.facebook.com">
+            <img src="~/facebook.png" height="20" width="20" />
+        </a>
+
+
+
+        <br />
+
+        <img src="~/iran_halisi.jpg" height="150" width="150" />
+
+        <h1> ürün1</h1>
+        <h2> ürün2</h2>
+        <h3> ürün3</h3>
+        <h4> ürün4</h4>
+        <h5> ürün5</h5>
+        <h6> ürün6</h6>
+
+
+        @*@foreach (var item in urunListesi)
+            {
+                <h4>@item.Productname</h4>
+            }
+
+            <%    java
+        <h4>@item.Productname</h4>
+            %>*@
+
+        <a href="https://www.arabam.com/">arabam sitesine git</a>
+
+        <a href="/Home/hakkimizda">Hakkımızda Sayfasına Git</a>
+
+
+
+    </div>
+</body>
+</html>
